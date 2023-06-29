@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>mohd adanan hassan</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        #malaysia-clock::after {
+            content: none;
+        }
+
+        .time-label {
+            display: none;
+        }
+    </style>
+    <script>
+        // Function to display the current time in Malaysia
+        function startClock() {
+            setInterval(function () {
+                var date = new Date();
+                var options = { timeZone: 'Asia/Kuala_Lumpur', hour: '2-digit', minute: '2-digit' };
+
+                var timeString = date.toLocaleTimeString('en-US', options);
+                document.getElementById("malaysia-clock").innerHTML = timeString;
+            }, 1000);
+        }
+
+        // Function to increment the visitor counter
+        function incrementCounter() {
+            var counter = document.getElementById("visitor-counter");
+            var count = parseInt(counter.innerHTML);
+            count++;
+            counter.innerHTML = count;
+        }
+
+        // Function to start the clock and increment the counter
+        function startClockAndCounter() {
+            startClock();
+            incrementCounter();
+        }
+    </script>
+</head>
+
+<body onload="startClockAndCounter()">
+
+    <header id="masthead" class="site-header" data-anchor-target=".hero"
+        data-top="background: rgba(255,255,255,0); padding: 30px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0);"
+        data-top-bottom="background: rgba(255,255,255,1); padding: 10px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);">
+        <nav id="primary-navigation" class="site-navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+
+                    <button type="button" class="navbar-toggle collapsed" data-target="#portfolio-perfect-collapse"
+                        aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a href="#hero" class="site-logo"><img src="assets/img/11.png" alt="logo"></a>
+
+                </div><!-- /.navbar-header -->
+
+                <div class="main-menu" id="portfolio-perfect-collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="page-scroll"><a href="#hero">Home</a></li>
+                        <li class="page-scroll"><a href="#about">About</a></li>
+                        <li class="page-scroll"><a href="#service">Service</a></li>
+                        <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
+                        <li class="page-scroll"><a href="#contact">Contact</a></li>
+
+                    </ul><!-- /.navbar-nav -->
+
+                </div><!-- /.navbar-collapse -->
+
+            </div>
+        </nav><!-- /.primary-navigation -->
+    </header><!-- /#header -->
+
+    <div id="hero" class="hero">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h1>MOHD ADANAN HASSAN</h1>
+                    <div class="page-scroll">
+                        <p class="job-title">Ahli Dewan Undangan Negeri Kelantan</p>
+                        <a href="#contact" class="btn btn-fill ">Hubungi </a>
+                        <div class="clearfix visible-xxs"></div>
+                        <a href="#portfolio" class="btn btn-border">Explore more</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-right">
+                    <img src="assets/img/Untitled-1.png" alt="alex-vidal">
+                </div>
+
+            </div>
+        </div>
+    </div><!-- /.hero -->
+
+    <main id="main" class="site-main">
+
+        <section id="about" class="site-section section-about text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <h2>About</h2>
+                        <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                        <p class="text-justify">'Cikgu Ney' ialah satu panggilan individu yang tidak asing lagi oleh
+                            masyarakat di Tumpat. Nama penuh beliau ialah
+                            Hj Mohd Adanan Bin Hassan. Dilahirkan di kawasan tumpat dan merupakan anak jati Dun
+                            Kelaboran. Diberi mandat sebagai Ahli Dewan Undangan Negeri (ADUN) Dun Kelaboran bermula
+                            tahun 2018 adalah satu tanggungjawab yang amat berat. Pengalaman berkecimpung dalam bidang
+                            politik melebihi 40 tahun dapat memberi kematangan dalam membuat keputusan tentang selok
+                            belok politik masa kini dalam mengetuai bahtera Dun Kelaboran pada kali ini.
+                            <br><br>
+                            Jiwa seorang pendidik tidak pernah luntur dalam dirinya walaupun sudah menjangkaui sedekad
+                            melapasi zaman berpencen. Mesra dengan panggilan 'cikgu ney' oleh masyarakat setempat
+                            membuktikan bahawa masyarakat mengenali beliau dengan seorang guru. Sedikit coretan
+                            perjalanan beliau, kerjaya beliau sebagai seorang pendidik bermula di Sekolah Kebangsaan
+                            LKTP Purun Terian Pahang pada tahun 1979. Pada masa inilah beliau mula berjinak-jinak dengan
+                            dunia politik, diasuh dan ditarbiah oleh guru-guru yang ditukarkan di sana yang aktif dalam
+                            bidang politik secara langsung dapat membina asas yang kukuh dalam membentuk jati diri
+                            sebagai petugas islam.
+                            <br><br>
+                            Pada tahun 1984, beliau dapat ditukarkan di kelantan, peluang emas untuk belajar agama di
+                            negeri sendiri tidak di sia-siakan. Menghadiri pengajian agama di waktu petang bersama tok
+                            guru pondok serta mendengar kuliah maghrib di masjid-masjid menjadi rutin kewajipan beliau
+                            dalam mencari ilmu sebagai seorang islam. Pada hari jumaat pula beliau berada di dataran
+                            ilmu kota bharu mendengar kuliah Almarhum Tuan Guru Nik Abdul Aziz b Nik Mat. Di samping itu
+                            juga, beliau tidak pernah lekang dalam menghadiri program-program parti yang diadakan
+                            seperti usrah dan lain-lain lagi.
+                            <br><br>
+                            Semasa bertugas di sekolah sering meminta dengan guru besar untuk mengajar kelas yang
+                            terlibat dengan peperiksaan iaitu kelas UPSR. Mula dinaikkan pangkat sebagai Penolong Kanan
+                            Satu di Sekolah Kebangsaan Kampung Laut Tumpat. Pada tahun 2004 ditukarkan ke Sekolah
+                            Kebangsaan Jerek Gua Musang dan Pada tahun 2006 dinaikkan pangkat sebagai guru besar di
+                            Sekolah Kebangsaan Pos Brooke Gua Musang. Di sekolah Kebangsaan Pos Brooke pernah menerima
+                            anugerah khas daripada Kementerian pendidikan Malaysia. Perkhidmatan sebagai seorang guru
+                            berakhir di Sekolah Kebangsaan Pos Brooke pada tahun 2014. Selepas pencen ditawarkan
+                            bertugas sebagai Pegawai Khas kepada YAB Menteri Besar Kelantan pada tahun 2015.
+                            Pada tahun 2018 dicadangkan untuk menjadi calon PAS di Dun Kelaboran dan menang dengan
+                            mendapat mejoriti 4926 dalam pertandingan tiga penjuru iaitu Pas, Barisan Nasianal dan
+                            Pakatan Harapan.<br><br>
+                            Hasil perkahwinan dengan Pn Rohani bt Ali diangerahkan 13 orang anak. Dalam mendidik anak
+                            anak alhamdulillah dapat melahirkan lima orang hafiz Al Quran. Sepuluh orang dapat belajar
+                            sampai ke menara gading , seorang down cyndrome dan dua orang masih berada di sekolah
+                            menengah. Tujuh orang anak anak memilih kerjaya sebagai seorang guru.
+                            Pengalaman dalam parti bermula dengan setiausaha cawangan,.ajk pemuda kawasan tumpat,
+                            bendahari pemuda kawasan Tumpat,.ajk.pas kawasan Tumpat, Setiausaha Pas Kawasan Tumpat.dan
+                            sekarang sebagai Naib Yang Diperua Pas Kawasan Tumpat. <br><br>
+                            Pengalaman dalam pilihanraya bermula sebagai setiausaha unit daerah mengundi, setiausaha
+                            dun, pengarah pilihanraya dun, Pengarah Pilihanraya Pas Kawasan dan akhirnya sebagai calon.
+                            Dalam kerajaan diberi tugas sebagai ajk PAC negeri.
+                        </p>
+                        <a href="https://drive.google.com/drive/folders/1ztAk1lIVrWBGnB0cbwMnG5HMU-Ratoy_?usp=share_link"
+                            class="btn btn-fill" target="_blank" download>Gambar YB</a>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.secton-about -->
+
+    
+
+        <section id="service" class="site-section section-services overlay text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>What i do</h3>
+                        <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="assets/img/front-end.svg" alt="Front End Developer">
+                            <h4>Front-end</h4>
+                            <p>As a javascript developer, I have experience in HTML5 and CSS3 techniques working with
+                                jQuery or more advanced javascript MVC frameworks such as angular</p>
+                        </div><!-- /.service -->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="assets/img/back-end.svg" alt="Back End Developer">
+                            <h4>Back-end</h4>
+                            <p>Utilising php frameworks such as Zend or creating bespoke code, I've written services
+                                supporting thousands of users, including REST APIs, e-learning applications and more.
+                            </p>
+                        </div><!-- /.service -->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="assets/img/consultancy.svg" alt="Coding">
+                            <h4>Consultancy</h4>
+                            <p>As well as providing development services, I can also help you decide strategic roadmaps
+                                via consultancy services.</p>
+                        </div><!-- /.service -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.secton-services -->
+
+        <section id="portfolio" class="site-section section-portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h3>My recent Works</h3>
+                    <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/332707424_884010772869497_5202334043647628331_n.jpg" class="img-res"
+                                alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Pembinaan Sekolah</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem1"><span
+                                        class="glyphicon glyphicon-eye-open"></span></a>
+                                <a
+                                    href="https://www.facebook.com/story.php?story_fbid=pfbid0g4tWWG8u6vDtX2ZmrKHS3DYsALG6TwFt1KYohkMaw31se5Fi7VzvvuAcjLMyvqzgl&id=100053771571187&mibextid=Nif5oz"><span
+                                        class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/2.jpg" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Bantuan Barangan Dapur</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem2"><span
+                                        class="glyphicon glyphicon-eye-open"></span></a>
+                                <a
+                                    href="https://www.facebook.com/YbCikguNanADUNKelaboran/posts/pfbid0xvY9NYXMsJQBoU3MwmJYGzuJSzMhp5TByYLeR6cgnj4JHc1wSfiYfnGs4LyA5gpGl"><span
+                                        class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/3.jpg" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Kebakaran Sebuah Rumah</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem3"><span
+                                        class="glyphicon glyphicon-eye-open"></span></a>
+                                <a
+                                    href="https://www.facebook.com/YbCikguNanADUNKelaboran/posts/pfbid0VDqbYts3hDfjwtU6Sky2eXfAWRaMMZDs78nHF3LrQjwLTZXTnPkfj7RofkT9r3XNl"><span
+                                        class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/4.jpg" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Bakul Makanan</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem4"><span
+                                        class="glyphicon glyphicon-eye-open"></span></a>
+                                <a
+                                    href="https://www.facebook.com/YbCikguNanADUNKelaboran/posts/pfbid02QeM8UzCmPwuK93faSRY31oKmFP3XNSQ8rbX8ry6hGYEwSbMdTeiEHZEksQ1jRz2Al"><span
+                                        class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/5.jpg" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Misi Bantuan Banjir</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem5"><span
+                                        class="glyphicon glyphicon-eye-open"></span></a>
+                                <a
+                                    href="https://www.facebook.com/YbCikguNanADUNKelaboran/posts/pfbid022SejqL88zQqTdZ4aHur1FLaDnuwJ2RdaZ13ykKWKPSsd76r2Qi2DxtTbaZgJ8fFWl"><span
+                                        class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/6.jpg" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Menziarah Pesakit</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem6"><span
+                                        class="glyphicon glyphicon-eye-open"></span></a>
+                                <a
+                                    href="https://www.facebook.com/YbCikguNanADUNKelaboran/posts/pfbid02sfQLuqFnjMHeohf2CthKvWc3FLYPRErwYdPBYKbRsfXmrUYJKLzLhnNpmBVDt7i7l"><span
+                                        class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.secton-portfolio -->
+        <section class="site-section section-counters text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <p class="counter" id="visitor-counter">0</p>
+                        <h4>You are visitor number</h4>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <p class="counter" id="malaysia-clock"></p>
+                        <h4>The current time in Malaysia</h4>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <p id="infinity" class="counter" data-from="0" data-to="1" data-speed="1000">0</p>
+                        <h4>Seconds on this site!<br></h4>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.section-counters -->
+        <section id="contact" class="site-section section-services overlay text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Contact Us</h3>
+                        <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                        <h4>Pusat Khidmat Dun Kelaboran </h4>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="assets/img/front-end.svg" alt="Front End Developer">
+                            <h4>Address</h4>
+                            <p>No 27 Jalan Setia Utama, Bandar Bentara, Tumpat, Malaysia, 16200</p>
+                        </div><!-- /.service -->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="assets/img/back-end.svg" alt="Back End Developer">
+                            <h4>Contact Details</h4>
+                            <p class="text-justify-center">09-726 0333 <br><br>
+                                Monday
+                                09:00 - 17:00 <br>
+                                Tuesday
+                                09:00 - 17:00<br>
+                                Wednesday
+                                09:00 - 17:00<br>
+                                Thursday
+                                09:00 - 17:00<br>
+                                Friday
+                                CLOSED<br>
+                                Saturday
+                                CLOSED<br>
+                                Sunday
+                                09:00 - 17:00
+                            </p>
+                        </div><!-- /.service -->
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="assets/img/consultancy.svg" alt="Coding">
+                            <h4>Email</h4>
+                            <a href="mailto:mtdkelaboran2018@gmail.com">mtdkelaboran2018@gmail.com</a>
+                        </div><!-- /.service -->
+
+
+                    </div>
+                </div>
+                <div class="social">
+                    <h5>Follow us</h5>
+                    <a href="https://www.facebook.com/YbCikguNanADUNKelaboran"><i class="fa fa-facebook"></i> </a>
+                    <a href="https://twitter.com/MohdAdanan55"><i class="fa fa-twitter"></i> </a>
+                    <a href="#"><i class="fa fa-snapchat-ghost"></i> </a>
+                    <a href="#"><i class="fa fa-instagram"></i> </a>
+                    <a href="#"><i class="fa fa-google-plus"></i> </a>
+                </div>
+                <div class="social">
+                    <h6>Follow us</h6>
+                    <a href="https://www.facebook.com/YbCikguNanADUNKelaboran"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/MohdAdanan55"><i class="fab fa-twitter"></i></a>
+
+                    <a href="https://www.instagram.com/adananhassan_n02/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@cikgu_nan.official"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@pkdkelaboran91"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            </div>
+
+            <p class="copyright"> &copy; Copyright All rights reserved. <br> <br><br><br></p>
+        </section><!-- /.secton-services -->
+
+    </main><!-- /#main -->
+
+    <footer id="colophon" class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <a class="icon facebook-bg" href="#"><i class="icon-facebook"></i></a>
+                    <a class="icon twitter-bg" href="#"><i class="icon-twitter"></i></a>
+                    <a class="icon gplus-bg" href="#"><i class="icon-linkedin"></i></a>
+                    <a class="icon linkedin-bg" href="#"><i class="icon-gplus"></i></a>
+                </div>
+                <div class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3">
+                    <p class="copyright">2017. All Rights Reserved</p>
+                </div>
+                <div class="col-sm-4 col-xs-3">
+                    <div class="text-right page-scroll">
+                        <a class="icon icon-up-bg" href="#hero"><i class="icon-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!-- /#footer -->
+
+    <!-- Modals -->
+    <div id="portfolioItem1" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+                    <img class="img-res" src="assets/img/332707424_884010772869497_5202334043647628331_n.jpg" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Pembinaan Sekolah</h4>
+                    <p>Lawatan tapak untuk pembinaan Sekolah Rendah Integrasi Teras Islam Tahfiz Inadurrahman (SRITI)
+                        Tumpat di Kg Berangan, Tumpat.
+                        Turut bersama YB ADUN Wakaf Bharu N04 Wakaf Bharu - Hj Mohd Rusli Abdullah ,YB ADUN Pengkalan
+                        Kubor Wan Roslan Wan Hamat (Exco Belia ,Sukan dan NGO) , Ustaz Mohd Hushaimi Bin Hussian dan En
+                        Solahuddin .</p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-fill"
+                        href="https://www.facebook.com/story.php?story_fbid=pfbid0g4tWWG8u6vDtX2ZmrKHS3DYsALG6TwFt1KYohkMaw31se5Fi7VzvvuAcjLMyvqzgl&id=100053771571187&mibextid=Nif5oz">Visit
+                        Page</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+                    <img class="img-res" src="assets/img/2.jpg" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Bantuan Barangan Dapur</h4>
+                    <p>Sekitar agihan dan sumbangan bantuan barangan dapur daripada Jabatan Kebajikan Masyarakat kepada
+                        penduduk yang menjalani PKPD di Taman Sri Bayu Jubakar Pantai Tumpat.
+                        Terima kasih dan tahniah diucapkan kepada semua yang terlibat daripada pihak JKM, APM, MDT ,
+                        Bomba dan masyarakat yang turut serta menjayakan bantuan ini.
+                        Jaga diri masing-masing dan semoga sentiasa dalam lindungan Allah SWT. Banyakkan berdoa dan
+                        bermunajat semoga dijauhi dari sebarang penyakit dan diberi kesihatan untuk meneruskan hidup
+                        sebagai hamba Allah SWT.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-fill">Visit Page</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem3" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+                    <img class="img-res" src="assets/img/3.jpg" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Kebakaran Sebuah Rumah</h4>
+                    <p>Turun meninjau ke lokasi kebakaran sebuah rumah kedai penduduk di Kampung Mukim Jubakar Pantai
+                        petang tadi.
+                        Kebakaran memusnahkan 90% kediaman beliau. Tiada kemalangan jiwa berlaku. Sumbangan diberikan
+                        untuk meringankan sedikit beban yang menimpa. Semoga pemilik rumah kuat dan tabah dengan ujian
+                        ini.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.facebook.com/YbCikguNanADUNKelaboran/posts/pfbid0VDqbYts3hDfjwtU6Sky2eXfAWRaMMZDs78nHF3LrQjwLTZXTnPkfj7RofkT9r3XNl"
+                        class="btn btn-fill">Visit Page</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem4" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+                    <img class="img-res" src="assets/img/4.jpg" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Bakul Makanan</h4>
+                    <p>Alhamdulilah pagi jumaat yang mulia, ambo menyampaikan bakul makanan kepada masyarakat kaum siam
+                        binjai yang terjejas akibat banjir.
+                        Bakul makanan adalah sumbangan pelbagai NGO yang memberi sumbangan kepada DUN untuk disalurkan
+                        kepada mangsa-mangsa banjir.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.facebook.com/YbCikguNanADUNKelaboran/posts/pfbid02QeM8UzCmPwuK93faSRY31oKmFP3XNSQ8rbX8ry6hGYEwSbMdTeiEHZEksQ1jRz2Al"
+                        class="btn btn-fill">Visit Page</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem5" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+                    <img class="img-res" src="assets/img/5.jpg" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Misi Bantuan Banjir</h4>
+                    <p>Alhamdullilah hari ini kami (DUN Kelaboran) menerima kunjungan dari team Ustaz Ustaz Zamri MANTOP
+                        NGO Dhuafa' Sejahtera dalam misi Bantuan Banjir Pantai Timur ke negeri Kelantan.
+                        Terima kasih kepada team Ustaz Zamri (Kedah Sejahtera) dan Khidmat Malaysia Cawangan Kedah
+                        kerana memberi sumbangan kepada mangsa banjir di DUN Kelaboran. Turut hadir sama Ustaz Mohd
+                        Hushaimi Bin Hussian (Peg. Khas MB Kelantan) mewakili YAB MB Kelantan.
+                        Hanya ALLAH sahaja yang dapat membalas jasa baik kalian semua.
+                        "Lakukanlah kebaikan sekecil apapun, kerana kamu tidak pernah tahu kebaikan mana yang akan
+                        membawamu ke syurga".</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.facebook.com/YbCikguNanADUNKelaboran/posts/pfbid022SejqL88zQqTdZ4aHur1FLaDnuwJ2RdaZ13ykKWKPSsd76r2Qi2DxtTbaZgJ8fFWl"
+                        class="btn btn-fill">Visit Page</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem6" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+                    <img class="img-res" src="assets/img/6.jpg" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Menziarah Pesakit</h4>
+                    <p>Alhamdulillah hari ini YB Cikgu Nan menziarah Encik Tauzi bin Samat yang uzur di Mukim Sedar
+                        .beliau diuji dengan nikmat keuzuran patah tangan akibat kemalangan jalan raya. Semoga ALLAH
+                        permudahkan segala urusan mereka dan keluarga mereka. Semoga cepat sembuh dan sihat selalu
+                        hendakNYA.
+                        أَذْهِبِ الْبَاسَ رَبَّ النَّاسِ اِشْفِ وَأَنْتَ الشَّافِي لَا شِفَاءَ إِلَّا شِفَاؤُكَ شِفَاءً
+                        لَا يُغَادِرُ سَقَمًا
+                        “Hilangkanlah penyakitnya wahai Tuhan sekalian manusia, sembuhkanlah wahai zat Yang Maha
+                        Menyembuhkan, tidak ada yang dapat menyembuhkan melainkan kesembuhan dariMu, iaitu kesembuhan
+                        yang tidak membawa rasa sakit”</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.facebook.com/YbCikguNanADUNKelaboran/posts/pfbid02sfQLuqFnjMHeohf2CthKvWc3FLYPRErwYdPBYKbRsfXmrUYJKLzLhnNpmBVDt7i7l"
+                        class="btn btn-fill">Visit Page</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
+    <script src="assets/js/jquery.countTo.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
