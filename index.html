@@ -65,19 +65,21 @@
             }, 1000);
         }
 
-        // Function to increment the visitor counter
-        function incrementCounter() {
-            var counter = document.getElementById("visitor-counter");
-            var count = parseInt(counter.innerHTML);
-            count++;
-            counter.innerHTML = count;
-        }
+        // 
 
         // Function to start the clock and increment the counter
         function startClockAndCounter() {
             startClock();
             incrementCounter();
         }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJRLKTMY7G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NJRLKTMY7G');
     </script>
 </head>
 
@@ -107,8 +109,8 @@
 
                         <li class="page-scroll"><a href="#hero">Home</a></li>
                         <li class="page-scroll"><a href="#about">About</a></li>
-                        <li class="page-scroll"><a href="#service">Service</a></li>
-                        <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
+                        <!-- <li class="page-scroll"><a href="#service">Service</a></li> -->
+                        <li class="page-scroll"><a href="#portfolio">MY RECENT WORKS</a></li>
                         <li class="page-scroll"><a href="#contact">Contact</a></li>
 
                     </ul><!-- /.navbar-nav -->
@@ -126,7 +128,7 @@
                 <div class="col-md-6">
                     <h1>MOHD ADANAN HASSAN</h1>
                     <div class="page-scroll">
-                        <p class="job-title">Ahli Dewan Undangan Negeri Kelantan</p>
+                        <p class="job-title">Mantan Ahli Dewan Undangan Negeri Kelantan</p>
                         <a href="#contact" class="btn btn-fill ">Hubungi </a>
                         <div class="clearfix visible-xxs"></div>
                         <a href="#portfolio" class="btn btn-border">Explore more</a>
@@ -203,9 +205,9 @@
             </div>
         </section><!-- /.secton-about -->
 
-    
 
-        <section id="service" class="site-section section-services overlay text-center">
+
+        <!-- <section id="service" class="site-section section-services overlay text-center">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -218,7 +220,7 @@
                             <h4>Front-end</h4>
                             <p>As a javascript developer, I have experience in HTML5 and CSS3 techniques working with
                                 jQuery or more advanced javascript MVC frameworks such as angular</p>
-                        </div><!-- /.service -->
+                        </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="service">
@@ -227,7 +229,7 @@
                             <p>Utilising php frameworks such as Zend or creating bespoke code, I've written services
                                 supporting thousands of users, including REST APIs, e-learning applications and more.
                             </p>
-                        </div><!-- /.service -->
+                        </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="service">
@@ -235,11 +237,10 @@
                             <h4>Consultancy</h4>
                             <p>As well as providing development services, I can also help you decide strategic roadmaps
                                 via consultancy services.</p>
-                        </div><!-- /.service -->
-                    </div>
+                        </div>
                 </div>
             </div>
-        </section><!-- /.secton-services -->
+        </section>/.secton-services -->
 
         <section id="portfolio" class="site-section section-portfolio">
             <div class="container">
@@ -341,7 +342,6 @@
                         <p class="counter" id="malaysia-clock"></p>
                         <h4>The current time in Malaysia</h4>
                     </div>
-
                     <div class="col-sm-4 col-xs-12">
                         <p id="infinity" class="counter" data-from="0" data-to="1" data-speed="1000">0</p>
                         <h4>Seconds on this site!<br></h4>
@@ -349,14 +349,14 @@
                 </div>
             </div>
         </section><!-- /.section-counters -->
+
+
+
         <section id="contact" class="site-section section-services overlay text-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h3>Contact Us</h3>
-                        <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                        <h4>Pusat Khidmat Dun Kelaboran </h4>
-                    </div>
+                   
+
                     <div class="col-sm-4">
                         <div class="service">
                             <img src="assets/img/front-end.svg" alt="Front End Developer">
