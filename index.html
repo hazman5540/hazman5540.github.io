@@ -38,6 +38,8 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -73,14 +75,7 @@
             incrementCounter();
         }
     </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJRLKTMY7G"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-NJRLKTMY7G');
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body onload="startClockAndCounter()">
@@ -198,8 +193,15 @@
                             dun, pengarah pilihanraya dun, Pengarah Pilihanraya Pas Kawasan dan akhirnya sebagai calon.
                             Dalam kerajaan diberi tugas sebagai ajk PAC negeri.
                         </p>
-                        <a href="https://drive.google.com/drive/folders/1ztAk1lIVrWBGnB0cbwMnG5HMU-Ratoy_?usp=share_link"
-                            class="btn btn-fill" target="_blank" download>Gambar YB</a>
+                        <button id="myButton" class="btn btn-fill" target="_blank" download>Gambar YB</button>
+                        <script>
+                            document.getElementById("myButton").addEventListener("click", function() {
+                                alert("Sebarang gambar yang diperlukan perlu mendapat kebenaran daripada pihak cikgunan terlebih dahulu."); // Display the pop-up message
+                                window.location.href = "https://drive.google.com/drive/folders/1ztAk1lIVrWBGnB0cbwMnG5HMU-Ratoy_?usp=share_link";
+                            });
+                        </script>
+                        
+
                     </div>
                 </div>
             </div>
@@ -331,13 +333,43 @@
                 </div>
             </div>
         </section><!-- /.secton-portfolio -->
+
+
+
         <section class="site-section section-counters text-center">
             <div class="container">
+
+                <script>
+                    function incrementCounter() {
+                        // Your code to increment the counter goes here
+                    }
+
+
+                    $(document).ready(function () {
+                        // Define a callback function to handle the response
+                        function handleVisitorCount(data) {
+                            // Update the visitor count element with the retrieved value
+                            $("#visitor-count").text(data.value);
+                        }
+
+                        // Create a new script element and set its source with the CountAPI endpoint URL,
+                        // including the "callback" parameter to specify the name of the callback function.
+                        var script = document.createElement('script');
+                        script.src = 'https://api.countapi.xyz/get/cikgunan.me/visitor_count?callback=handleVisitorCount';
+
+                        // Append the script element to the document head to initiate the JSONP request.
+                        document.head.appendChild(script);
+                    });
+
+                </script>
+
+
                 <div class="row">
                     <div class="col-sm-4 col-xs-12">
-                        <p class="counter" id="visitor-counter">0</p>
+                        <p class="counter" id="visitor-count">Loading...</p>
                         <h4>You are visitor number</h4>
                     </div>
+
                     <div class="col-sm-4 col-xs-12">
                         <p class="counter" id="malaysia-clock"></p>
                         <h4>The current time in Malaysia</h4>
@@ -355,7 +387,7 @@
         <section id="contact" class="site-section section-services overlay text-center">
             <div class="container">
                 <div class="row">
-                   
+
 
                     <div class="col-sm-4">
                         <div class="service">
