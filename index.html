@@ -39,6 +39,65 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Add Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCUO9xgUHiq0xQVnntlVSdBLK3lOMylAKg",
+            authDomain: "man-poro.firebaseapp.com",
+            projectId: "man-poro",
+            storageBucket: "man-poro.appspot.com",
+            messagingSenderId: "1059515381532",
+            appId: "1:1059515381532:web:e1b4737cf144c6c72cecd9",
+            measurementId: "G-HMLXBF81VG"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <!-- Add Firebase SDKs (including Firestore) -->
+    <!-- ... (configuration code as shown above) ... -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script>
+        // Initialize Firestore
+        var db = firebase.firestore();
+
+        // Function to update the visitor count in Firestore
+        function updateVisitorCount() {
+            // Get the current count from Firestore
+            db.collection("visitors")
+                .doc("count")
+                .get()
+                .then((doc) => {
+                    if (doc.exists) {
+                        // If the document exists, update the count
+                        const currentCount = doc.data().value || 0;
+                        const newCount = currentCount + 1;
+
+                        // Update the count in Firestore
+                        db.collection("visitors").doc("count").set({ value: newCount });
+
+                        // Display the count on your website (optional)
+                        console.log("Visitor count:", newCount);
+                    } else {
+                        // If the document doesn't exist, create it with the initial count of 1
+                        db.collection("visitors").doc("count").set({ value: 1 });
+                    }
+                })
+                .catch((error) => {
+                    console.error("Error getting document:", error);
+                });
+        }
+
+        // Call the function to update the count when the website loads
+        updateVisitorCount();
+    </script>
+
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -195,12 +254,12 @@
                         </p>
                         <button id="myButton" class="btn btn-fill" target="_blank" download>Gambar YB</button>
                         <script>
-                            document.getElementById("myButton").addEventListener("click", function() {
+                            document.getElementById("myButton").addEventListener("click", function () {
                                 alert("Sebarang gambar yang diperlukan perlu mendapat kebenaran daripada pihak cikgunan terlebih dahulu."); // Display the pop-up message
                                 window.location.href = "https://drive.google.com/drive/folders/1ztAk1lIVrWBGnB0cbwMnG5HMU-Ratoy_?usp=share_link";
                             });
                         </script>
-                        
+
 
                     </div>
                 </div>
